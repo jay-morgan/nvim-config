@@ -1,8 +1,6 @@
 return {
-    { dir = 'plugins.neoformat' },
-    { dir = 'plugins.autopairs' },
-    { dir = 'plugins.debug' },
-    { dir = 'plugins.filetree' },
-    { dir = 'plugins.rosepine' },
-    { dir = 'plugins.telescopefilebrowser' },
+    { dir = 'plugins.nvim-autopairs' },
+    { dir = 'plugins.neo-tree' },
+    { dir = 'plugins.rose-pine' },
+    { dir = 'plugins.telescope-file-browser' },
 }

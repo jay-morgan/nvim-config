@@ -148,4 +148,7 @@ return {
     --	end,
     --}
 
+return {
+--auto-run code formatters like prettier for Typescript
+'sbdchd/neoformat',
 }

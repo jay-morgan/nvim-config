@@ -20,7 +20,8 @@ return {
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
-        -- javascript = { { "prettierd", "prettier" } },
+        javascript = { { 'prettier' } },
+        typescript = { { 'prettier' } },
       },
     },
   },
