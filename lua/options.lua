@@ -51,7 +51,7 @@ vim.opt.splitbelow = true
 --  See `:help 'list'`
 --  and `:help 'listchars'`
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣', eol = "↲" }
 
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
@@ -61,5 +61,44 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+
+-- custom
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.smarttab = true
+vim.opt.autoindent = true
+
+--- NOT IN USE
+-- vim.g.copilot_assume_mapped = true
+
+-- local mark = require("harpoon.mark")
+-- local ui = require("harpoon.ui")
+-- vim.keymap.set("n", "<C-p>", mark.add_file, { desc = "Add file to harpoon marks" })
+-- vim.keymap.set("n", "<leader>h", ui.toggle_quick_menu)
+-- vim.keymap.set("n", "<C-1>", function()
+--   ui.nav_file(1)
+-- end)
+-- vim.keymap.set("n", "<C-2>", function()
+--   ui.nav_file(2)
+-- end)
+-- vim.keymap.set("n", "<C-3>", function()
+--   ui.nav_file(3)
+-- end)
+-- vim.keymap.set("n", "<C-4>", function()
+--   ui.nav_file(4)
+-- end)
+
+-- GIT WORKTREE @TODO: test
+-- set up git worktree in telescope
+--require("telescope").load_extension("git_worktree")
+-- Keybinding to -create a worktree
+-- vim.api.nvim_set_keymap('n', '<leader>wc', [[:lua require("git-worktree").create_worktree()<CR>]],
+--  { noremap = true, silent = true })
+-- Keybinding to switch to an existing worktree
+-- vim.api.nvim_set_keymap('n', '<leader>ws', [[:lua require("git-worktree").switch_worktree()<CR>]],
+--  { noremap = true, silent = true })
+-- Keybinding to delete an existing worktree
+--vim.api.nvim_set_keymap('n', '<leader>wd', [[:lua require("git-worktree").delete_worktree()<CR>]],
+-- { noremap = true, silent = true })
 
 -- vim: ts=2 sts=2 sw=2 et

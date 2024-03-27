@@ -54,4 +54,53 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- custom
+vim.api.nvim_set_keymap("i", "<C-y>", "<Cmd>lua vim.lsp.buf.references()<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<C-f>", function()
+  vim.cmd("silent !tmux neww tmux-sessionizer")
+end, { noremap = true })
+
+vim.keymap.set("n", "<C-g>", function()
+  vim.cmd("silent !tmux neww tmux-session-switcher")
+end, { noremap = true })
+
+vim.keymap.set("n", "<C-h>", function()
+  vim.cmd("silent !tmux neww tmux-windowizer")
+end, { noremap = true })
+
+-- Open help window in a vertical split to the right.
+vim.api.nvim_create_autocmd("BufWinEnter", {
+  group = vim.api.nvim_create_augroup("help_window_right", {}),
+  pattern = { "*.txt" },
+  callback = function()
+    if vim.o.filetype == "help" then
+      vim.cmd.wincmd("L")
+    end
+  end,
+})
+
+-- for neoformat
+-- vim.api.nvim_create_autocmd("BufWritePre", {
+--   group = vim.api.nvim_create_augroup("format_on_save", {}),
+--   pattern = { "*.c", "*.cpp", "*.go", "*.lua", "*.py", "*.rs", "*.tsx", "*.ts", "*.js", "*.jsx" },
+--   callback = function()
+--     vim.cmd("Neoformat")
+--   end,
+-- })
+--vim.api.nvim_create_autocmd("TextChanged", {
+--	group = vim.api.nvim_create_augroup("format_on_change", {}),
+--	pattern = { "*.c", "*.cpp", "*.go", "*.lua", "*.py", "*.rs", "*.tsx", "*.ts", "*.js", "*.jsx" },
+--	callback = function()
+--		vim.cmd("Neoformat")
+--	end,
+--})
+--vim.api.nvim_create_autocmd("InsertLeave", {
+--group = vim.api.nvim_create_augroup("format_on_insert_exit", {}),
+--pattern = { "*.c", "*.cpp", "*.go", "*.lua", "*.py", "*.rs", "*.tsx", "*.ts", "*.js", "*.jsx" },
+--callback = function()
+--vim.cmd("Neoformat")
+--end,
+--})
+
 -- vim: ts=2 sts=2 sw=2 et
