@@ -1,3 +1,12 @@
-- kick start plugins line by line
+\*\* SETUP
+
+- lsp settings
+- check why leader FB is not starting file browser
 - move over old config
-- checkout experiments files
+- checkout experiments file, emails and notes list
+
+\*\* LEARNING
+:tutor
+:help
+:Telescope help
+:Telescope help_tags
