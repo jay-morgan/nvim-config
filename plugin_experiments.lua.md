@@ -4,11 +4,11 @@
 -- See the kickstart.nvim README for more information
 return {
 --{
--- "nvim-tree/nvim-tree.lua",
--- requires = "nvim-tree/nvim-web-devicons",
+-- 'nvim-tree/nvim-tree.lua',
+-- requires = 'nvim-tree/nvim-web-devicons',
 -- config = function()
--- require("nvim-tree").setup({
--- sort_by = "case_sensitive",
+-- require('nvim-tree').setup({
+-- sort_by = 'case_sensitive',
 -- view = {
 -- width = 30,
 -- },
@@ -23,33 +23,33 @@ return {
 --},
 --},
 --{
--- "rebelot/kanagawa.nvim",
+-- 'rebelot/kanagawa.nvim',
 -- config = function()
--- require("kanagawa").setup({
+-- require('kanagawa').setup({
 -- terminalColors = true,
 -- transparent = true,
--- theme = "dragon",
+-- theme = 'dragon',
 -- })
 -- end,
 --},
 --{
--- "tjdevries/colorbuddy.vim",
+-- 'tjdevries/colorbuddy.vim',
 --},
 --{
--- "tjdevries/gruvbuddy.nvim",
+-- 'tjdevries/gruvbuddy.nvim',
 --},
 -- {
--- "github/copilot.vim",
+-- 'github/copilot.vim',
 -- },
 -- {
--- "rose-pine/neovim",
+-- 'rose-pine/neovim',
 -- priority = 1000,
 -- config = function()
--- require("rose-pine").setup({
+-- require('rose-pine').setup({
 -- --- @usage 'auto'|'main'|'moon'|'dawn'
--- variant = "auto",
+-- variant = 'auto',
 -- --- @usage 'main'|'moon'|'dawn'
--- dark_variant = "main",
+-- dark_variant = 'main',
 -- bold_vert_split = false,
 -- dim_nc_background = true,
 -- disable_background = true,
@@ -58,27 +58,27 @@ return {
 
     -- 			-- @usage string hex value or named color from rosepinetheme.com/palette
     -- 			groups = {
-    -- 				background = "base",
-    -- 				background_nc = "_experimental_nc",
-    -- 				panel = "surface",
-    -- 				panel_nc = "base",
-    -- 				border = "highlight_med",
-    -- 				comment = "muted",
-    -- 				link = "iris",
-    -- 				punctuation = "subtle",
+    -- 				background = 'base',
+    -- 				background_nc = '_experimental_nc',
+    -- 				panel = 'surface',
+    -- 				panel_nc = 'base',
+    -- 				border = 'highlight_med',
+    -- 				comment = 'muted',
+    -- 				link = 'iris',
+    -- 				punctuation = 'subtle',
 
-    -- 				error = "love",
-    -- 				hint = "iris",
-    -- 				info = "foam",
-    -- 				warn = "gold",
+    -- 				error = 'love',
+    -- 				hint = 'iris',
+    -- 				info = 'foam',
+    -- 				warn = 'gold',
 
     -- 				headings = {
-    -- 					h1 = "iris",
-    -- 					h2 = "foam",
-    -- 					h3 = "rose",
-    -- 					h4 = "gold",
-    -- 					h5 = "pine",
-    -- 					h6 = "foam",
+    -- 					h1 = 'iris',
+    -- 					h2 = 'foam',
+    -- 					h3 = 'rose',
+    -- 					h4 = 'gold',
+    -- 					h5 = 'pine',
+    -- 					h6 = 'foam',
     -- 				},
     -- 				-- or set all headings at once
     -- 				--	 headings = 'subtle'
@@ -89,26 +89,26 @@ return {
     -- 			highlight_groups = {
     -- 				-- ColorColumn = { bg = 'muted', blend = 10 },
     -- 				--6E6A86 (comments, line numbers)
-    -- 				ColorColumn = { bg = "muted", blend = 10 },
-    -- 				-- Blend colours against the "base" background
-    -- 				CursorLine = { bg = "muted", blend = 10 },
-    -- 				StatusLine = { fg = "love", bg = "love", blend = 10 },
+    -- 				ColorColumn = { bg = 'muted', blend = 10 },
+    -- 				-- Blend colours against the 'base' background
+    -- 				CursorLine = { bg = 'muted', blend = 10 },
+    -- 				StatusLine = { fg = 'love', bg = 'love', blend = 10 },
 
     -- 				-- By default each group adds to the existing config.
     -- 				-- If you only want to set what is written in this config exactly,
     -- 				-- you can set the inherit option:
-    -- 				Search = { bg = "gold", inherit = false },
+    -- 				Search = { bg = 'gold', inherit = false },
     -- 			},
     -- 		})
 
     -- 		-- Set colorscheme after options
-    -- 		vim.cmd("colorscheme rose-pine")
+    -- 		vim.cmd('colorscheme rose-pine')
     -- 	end,
     -- },
     -- {
-    -- 	"ThePrimeagen/harpoon",
+    -- 	'ThePrimeagen/harpoon',
     -- 	config = function()
-    -- 		require("harpoon").setup({
+    -- 		require('harpoon').setup({
     -- 			global_settings = {
     -- 				save_on_toggle = true,
     -- 				save_on_change = true,
@@ -117,14 +117,14 @@ return {
     -- 	end,
     -- },
     -- {
-    -- 	"startup-nvim/startup.nvim",
+    -- 	'startup-nvim/startup.nvim',
     -- 	config = function()
-    -- 		require("startup").setup({
-    -- 			theme = "evil",
+    -- 		require('startup').setup({
+    -- 			theme = 'evil',
     -- 		})
     -- 	end,
     -- },
-    --{ "xiyaowong/transparent.nvim" },
+    --{ 'xiyaowong/transparent.nvim' },
     -- { 'ThePrimeagen/git-worktree.nvim' },
     --{
     --'kristijanhusak/vim-dadbod-ui',

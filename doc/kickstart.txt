@@ -10,7 +10,7 @@ It is not:
 
                                                                 *kickstart-is*
 It is:
-- Somewhere that has a good start for the most common "IDE" type features:
+- Somewhere that has a good start for the most common 'IDE' type features:
     - autocompletion
     - goto-definition
     - find references
