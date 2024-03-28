@@ -1,3 +1,5 @@
+-- CODESCENE NEOVIM
+
 -- "rebelot/kanagawa.nvim",
 -- config = function()
 -- require("kanagawa").setup({
@@ -10,18 +12,6 @@
 -- "tjdevries/colorbuddy.vim",
 
 -- "tjdevries/gruvbuddy.nvim",
-
--- {
--- "ThePrimeagen/harpoon",
--- config = function()
--- require("harpoon").setup({
--- global_settings = {
--- save_on_toggle = true,
--- save_on_change = true,
--- },
--- })
--- end,
--- },
 
 -- { 'ThePrimeagen/git-worktree.nvim' },
 

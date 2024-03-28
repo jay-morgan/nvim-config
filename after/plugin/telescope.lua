@@ -15,5 +15,5 @@ vim.keymap.set('n', '<leader>pr', function()
 	builtin.grep_string({ search = vim.fn.input('Grep > ') })
 end, {desc = 'Search by G[R]ep'})
 
-vim.keymap.set('n', '<leader>h', vim.diagnostic.open_float, { desc = 'Help' })
-vim.keymap.set('n', '<leader>ht', builtin.help_tags, {desc = 'Help [T]ags'})
+vim.keymap.set('n', '<leader>?', vim.diagnostic.open_float, { desc = '[?] Help' })
+vim.keymap.set('n', '<leader>?t', builtin.help_tags, {desc = 'Help [T]ags'})

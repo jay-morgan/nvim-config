@@ -68,26 +68,6 @@ vim.opt.shiftwidth = 4
 vim.opt.smarttab = true
 vim.opt.autoindent = true
 
---- NOT IN USE
--- vim.g.copilot_assume_mapped = true
-
--- local mark = require("harpoon.mark")
--- local ui = require("harpoon.ui")
--- vim.keymap.set("n", "<C-p>", mark.add_file, { desc = "Add file to harpoon marks" })
--- vim.keymap.set("n", "<leader>h", ui.toggle_quick_menu)
--- vim.keymap.set("n", "<C-1>", function()
---   ui.nav_file(1)
--- end)
--- vim.keymap.set("n", "<C-2>", function()
---   ui.nav_file(2)
--- end)
--- vim.keymap.set("n", "<C-3>", function()
---   ui.nav_file(3)
--- end)
--- vim.keymap.set("n", "<C-4>", function()
---   ui.nav_file(4)
--- end)
-
 -- GIT WORKTREE @TODO: test
 -- set up git worktree in telescope
 --require("telescope").load_extension("git_worktree")
