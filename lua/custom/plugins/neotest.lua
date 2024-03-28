@@ -31,7 +31,6 @@ return {
                     recursive_run = true
                 }),
                 require('neotest-jest')({
-                    jestCommand = require('neotest-jest.jest-util').getJestCommand(vim.fn.expand '%:p:h') .. ' --watch',
                     jestConfigFile = 'custom.jest.config.ts',
                     env = { CI = true },
                     cwd = function(path)

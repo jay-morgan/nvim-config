@@ -29,7 +29,7 @@ return {
         ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
         ['<leader>f'] = { name = '[F]iles', _ = 'which_key_ignore' },
         ['<leader>p'] = { name = '[P]roject', _ = 'which_key_ignore' },
-
+        ['<leader>t'] = { name = '[T]est', _ = 'which_key_ignore' },
       }
     end,
   },
