@@ -55,8 +55,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- custom
-vim.api.nvim_set_keymap("i", "<C-y>", "<Cmd>lua vim.lsp.buf.references()<CR>", { noremap = true, silent = true })
-
 vim.keymap.set("n", "<C-f>", function()
   vim.cmd("silent !tmux neww tmux-sessionizer")
 end, { noremap = true })
