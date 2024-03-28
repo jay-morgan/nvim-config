@@ -1,12 +1,11 @@
-require('rose-pine')
-require('tokyonight')
+require 'rose-pine'
+require 'tokyonight'
 
-function CustomColors(color) 
-	color = 'rose-pine'
-	vim.cmd.colorscheme(color)
-	vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
-	vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
-
+function CustomColors(color)
+  color = 'tokyonight'
+  vim.cmd.colorscheme(color)
+  vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
+  vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
 end
 
 CustomColors()
@@ -87,3 +86,4 @@ CustomColors()
 -- -- Customize the background of the input field
 -- vim.cmd("highlight TelescopePrompt guibg=NONE ctermbg=NONE")
 -- vim.cmd("highlight TelescopePromptNormal guibg=NONE ctermbg=NONE")
+
