@@ -9,11 +9,12 @@ end, { desc = "Open [F]ile [B]rowser" })
 -- add telescope search modes
 local builtin = require("telescope.builtin")
 
-vim.keymap.set("n", "<leader>pf", builtin.find_files, {desc = "Search [P]roject [F]iles"})
-vim.keymap.set("n", "<leader>pg", builtin.git_files, {desc = "Search [P]roject [G]it files"})
 vim.keymap.set("n", "<leader>pr", function()
 	builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end, {desc = "Search by G[R]ep"})
 
 vim.keymap.set("n", "<leader>?", vim.diagnostic.open_float, { desc = "[?] Help" })
 vim.keymap.set("n", "<leader>?t", builtin.help_tags, {desc = "Help [T]ags"})
+
+vim.keymap.set("n", "<leader>gc", require("telescope.builtin").git_bcommits, { desc = "[G]it [B]ranches" })
+vim.keymap.set("n", "<leader>gb", require("telescope.builtin").git_branches, { desc = "[G]it [C]ommits" })

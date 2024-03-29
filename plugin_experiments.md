@@ -1,5 +1,9 @@
 -- CODESCENE NEOVIM
 
+-- ibhagwan/fzf-lua
+
+-- sourcegraph/sg.nvim (cody) / Exafunction/codeium.vim (codium)
+
 -- "rebelot/kanagawa.nvim",
 -- config = function()
 -- require("kanagawa").setup({
