@@ -13,15 +13,15 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 
--- Don't show the mode, since it's already in the status line
+-- Don"t show the mode, since it"s already in the status line
 vim.opt.showmode = false
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
---  See `:help 'clipboard'`
-vim.opt.clipboard = 'unnamedplus'
+--  See `:help "clipboard"`
+vim.opt.clipboard = "unnamedplus"
 
 -- Enable break indent
 vim.opt.breakindent = true
@@ -34,7 +34,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = "yes"
 
 -- Decrease update time
 vim.opt.updatetime = 250
@@ -48,15 +48,15 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
---  See `:help 'list'`
---  and `:help 'listchars'`
+--  See `:help "list"`
+--  and `:help "listchars"`
 vim.opt.list = true
--- vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+-- vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 -- NOTE Also can add end of line, helpful for whitespace languages
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣', eol = '↲' }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣", eol = "↲" }
 
 -- Preview substitutions live, as you type!
-vim.opt.inccommand = 'split'
+vim.opt.inccommand = "split"
 
 -- Show which line your cursor is on
 vim.opt.cursorline = true
@@ -74,13 +74,13 @@ vim.opt.autoindent = true
 -- set up git worktree in telescope
 --require("telescope").load_extension("git_worktree")
 -- Keybinding to -create a worktree
--- vim.api.nvim_set_keymap('n', '<leader>wc', [[:lua require("git-worktree").create_worktree()<CR>]],
+-- vim.api.nvim_set_keymap("n", "<leader>wc", [[:lua require("git-worktree").create_worktree()<CR>]],
 --  { noremap = true, silent = true })
 -- Keybinding to switch to an existing worktree
--- vim.api.nvim_set_keymap('n', '<leader>ws', [[:lua require("git-worktree").switch_worktree()<CR>]],
+-- vim.api.nvim_set_keymap("n", "<leader>ws", [[:lua require("git-worktree").switch_worktree()<CR>]],
 --  { noremap = true, silent = true })
 -- Keybinding to delete an existing worktree
---vim.api.nvim_set_keymap('n', '<leader>wd', [[:lua require("git-worktree").delete_worktree()<CR>]],
+--vim.api.nvim_set_keymap("n", "<leader>wd", [[:lua require("git-worktree").delete_worktree()<CR>]],
 -- { noremap = true, silent = true })
 
 -- vim: ts=2 sts=2 sw=2 et

@@ -11,11 +11,11 @@
 ========         ||                    ||   | === |          ========
 ========         ||                    ||   |-----|          ========
 ========         ||:Tutor              ||   |:::::|          ========
-========         |'-..................-'|   |____o|          ========
+========         |"-..................-"|   |____o|          ========
 ========         `"")----------------(""`   ___________      ========
 ========        /::::::::::|  |::::::::::\  \ no mouse \     ========
 ========       /:::========|  |==hjkl==:::\  \ required \    ========
-========      '""""""""""""'  '""""""""""""'  '""""""""""'   ========
+========      """"""""""""""  """"""""""""""  """"""""""""   ========
 ========                                                     ========
 =====================================================================
 =====================================================================
@@ -28,11 +28,11 @@ What is Kickstart?
     The goal is that you can read every line of code, top-to-bottom, understand
     what your configuration is doing, and modify it to suit your needs.
 
-    Once you've done that, you can start exploring, configuring and tinkering to
+    Once you"ve done that, you can start exploring, configuring and tinkering to
     make Neovim your own! That might mean leaving Kickstart just the way it is for a while
-    or immediately breaking it into modular pieces. It's up to you!
+    or immediately breaking it into modular pieces. It"s up to you!
 
-    If you don't know anything about Lua, I recommend taking some time to read through
+    If you don"t know anything about Lua, I recommend taking some time to read through
     a guide. One possible example which will only take 10-15 minutes:
       - https://learnxinyminutes.com/docs/lua/
 
@@ -63,7 +63,7 @@ Kickstart Guide:
     This should be the first place you go to look when you're stuck or confused
     with something. It's one of my favorite Neovim features.
 
-    MOST IMPORTANTLY, we provide a keymap '<space>sh' to [s]earch the [h]elp documentation,
+    MOST IMPORTANTLY, we provide a keymap "<space>sh" to [s]earch the [h]elp documentation,
     which is very useful when you're not exactly sure of what you're looking for.
 
   I have left several `:help X` comments throughout the init.lua
@@ -85,16 +85,16 @@ P.S. You can delete this when you're done too. It's your config now! :)
 --]]
 
 -- [[ Setting options ]]
-require 'options'
+require "options"
 
 -- [[ Basic Keymaps ]]
-require 'keymaps'
+require "keymaps"
 
 -- [[ Install `lazy.nvim` plugin manager ]]
-require 'lazy-bootstrap'
+require "lazy-bootstrap"
 
 -- [[ Configure and install plugins ]]
-require 'lazy-plugins'
+require "lazy-plugins"
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

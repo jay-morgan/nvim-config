@@ -17,8 +17,8 @@ A starting point for Neovim that is:
 ### Install Neovim
 
 Kickstart.nvim targets _only_ the latest
-['stable'](https://github.com/neovim/neovim/releases/tag/stable) and latest
-['nightly'](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim.
+["stable"](https://github.com/neovim/neovim/releases/tag/stable) and latest
+["nightly"](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim.
 If you are experiencing issues, please make sure you have the latest versions.
 
 ### Install External Dependencies
@@ -40,7 +40,7 @@ External Requirements:
 > See [Install Recipes](#Install-Recipes) for additional Windows and Linux specific notes
 > and quick install snippets
 
-Neovim's configurations are located under the following paths, depending on your OS:
+Neovim"s configurations are located under the following paths, depending on your OS:
 
 | OS                   | PATH                                      |
 | :------------------- | :---------------------------------------- |
@@ -57,7 +57,7 @@ so that you have your own copy that you can modify, then install by cloning the
 fork to your machine using one of the commands below, depending on your OS.
 
 > **NOTE**
-> Your fork's url will be something like this:
+> Your fork"s url will be something like this:
 > `https://github.com/<your_github_username>/kickstart-modular.nvim.git`
 
 #### Clone kickstart.nvim
@@ -69,20 +69,20 @@ fork to your machine using one of the commands below, depending on your OS.
 <details><summary> Linux and Mac </summary>
 
 ```sh
-git clone https://github.com/dam9000/kickstart-modular.nvim.git '${XDG_CONFIG_HOME:-$HOME/.config}'/nvim
+git clone https://github.com/dam9000/kickstart-modular.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 </details>
 
 <details><summary> Windows </summary>
 
-If you're using `cmd.exe`:
+If you"re using `cmd.exe`:
 
 ```
 git clone https://github.com/dam9000/kickstart-modular.nvim.git %userprofile%\AppData\Local\nvim\
 ```
 
-If you're using `powershell.exe`
+If you"re using `powershell.exe`
 
 ```
 git clone https://github.com/dam9000/kickstart-modular.nvim.git $env:USERPROFILE\AppData\Local\nvim\
@@ -121,16 +121,16 @@ In the file: `lua/custom/plugins/autopairs.lua`, add:
 -- File: lua/custom/plugins/autopairs.lua
 
 return {
-  'windwp/nvim-autopairs',
+  "windwp/nvim-autopairs",
   -- Optional dependency
-  dependencies = { 'hrsh7th/nvim-cmp' },
+  dependencies = { "hrsh7th/nvim-cmp" },
   config = function()
-    require('nvim-autopairs').setup {}
+    require("nvim-autopairs").setup {}
     -- If you want to automatically add `(` after selecting a function or method
-    local cmp_autopairs = require('nvim-autopairs.completion.cmp')
-    local cmp = require('cmp')
+    local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+    local cmp = require("cmp")
     cmp.event:on(
-      'confirm_done',
+      "confirm_done",
       cmp_autopairs.on_confirm_done()
     )
   end,
@@ -151,15 +151,15 @@ In the file: `lua/custom/plugins/filetree.lua`, add:
 -- File: lua/custom/plugins/filetree.lua
 
 return {
-  'nvim-neo-tree/neo-tree.nvim',
-  version = '*',
+  "nvim-neo-tree/neo-tree.nvim",
+  version = "*",
   dependencies = {
-    'nvim-lua/plenary.nvim',
-    'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
-    'MunifTanjim/nui.nvim',
+    "nvim-lua/plenary.nvim",
+    "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+    "MunifTanjim/nui.nvim",
   },
   config = function ()
-    require('neo-tree').setup {}
+    require("neo-tree").setup {}
   end,
 }
 ```
@@ -181,13 +181,13 @@ return {
     to maintain multiple configurations. For example, you can install the kickstart
     configuration in `~/.config/nvim-kickstart` and create an alias:
     ```
-    alias nvim-kickstart='NVIM_APPNAME='nvim-kickstart' nvim'
+    alias nvim-kickstart="NVIM_APPNAME="nvim-kickstart" nvim"
     ```
     When you run Neovim using `nvim-kickstart` alias it will use the alternative
     config directory and the matching local directory
     `~/.local/share/nvim-kickstart`. You can apply this approach to any Neovim
     distribution that you would like to try out.
-- What if I want to 'uninstall' this configuration:
+- What if I want to "uninstall" this configuration:
   - See [lazy.nvim uninstall](https://github.com/folke/lazy.nvim#-uninstalling) information
 - Why is the kickstart `init.lua` a single file? Wouldn't it make sense to split it into multiple files?
   - The main purpose of kickstart is to serve as a teaching tool and a reference
@@ -221,7 +221,7 @@ This requires:
 - Install CMake and the Microsoft C++ Build Tools on Windows
 
 ```lua
-{'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+{"nvim-telescope/telescope-fzf-native.nvim", build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build" }
 ```
 
 </details>
@@ -273,7 +273,7 @@ sudo apt install make gcc ripgrep unzip neovim
 ```
 sudo apt update
 sudo apt install make gcc ripgrep unzip git
-echo 'deb https://deb.debian.org/debian unstable main' | sudo tee -a /etc/apt/sources.list
+echo "deb https://deb.debian.org/debian unstable main" | sudo tee -a /etc/apt/sources.list
 sudo apt update
 sudo apt install -t unstable neovim
 ```

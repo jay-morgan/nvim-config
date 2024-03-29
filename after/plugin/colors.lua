@@ -1,12 +1,12 @@
-require 'rose-pine'
-require 'tokyonight'
-require 'vesper'
+require "rose-pine"
+require "tokyonight"
+require "vesper"
 
 function CustomColors(color)
-  color = 'vesper'
+  color = "vesper"
   vim.cmd.colorscheme(color)
-  vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
-  vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
+  vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+  vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 CustomColors()

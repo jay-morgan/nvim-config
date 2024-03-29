@@ -13,23 +13,23 @@
 
 -- "tjdevries/gruvbuddy.nvim",
 
--- { 'ThePrimeagen/git-worktree.nvim' },
+-- { "ThePrimeagen/git-worktree.nvim" },
 
 --{
---'kristijanhusak/vim-dadbod-ui',
+--"kristijanhusak/vim-dadbod-ui",
 --dependencies = {
---{ 'tpope/vim-dadbod', lazy = true },
+--{ "tpope/vim-dadbod", lazy = true },
 --{
--- 'kristijanhusak/vim-dadbod-completion',
--- ft = { 'mongodb', 'sql', 'mysql', 'plsql' },
+-- "kristijanhusak/vim-dadbod-completion",
+-- ft = { "mongodb", "sql", "mysql", "plsql" },
 -- lazy = true
 --},
 --},
 -- cmd = {
--- 'DBUI',
--- 'DBUIToggle',
--- 'DBUIAddConnection',
--- 'DBUIFindBuffer',
+-- "DBUI",
+-- "DBUIToggle",
+-- "DBUIAddConnection",
+-- "DBUIFindBuffer",
 -- },
 -- init = function()
 -- -- Your DBUI configuration

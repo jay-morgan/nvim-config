@@ -4,14 +4,14 @@ return {
     -- change the command in the config to whatever the name of that colorscheme is.
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-    'folke/tokyonight.nvim',
-    as = 'tokyonight',
+    "folke/tokyonight.nvim",
+    as = "tokyonight",
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
-      -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      require('tokyonight').setup {
+      -- any other, such as "tokyonight-storm", "tokyonight-moon", or "tokyonight-day".
+      require("tokyonight").setup {
         -- your configuration comes here
         -- or leave it empty to use the default settings
         style = "moon",  -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
@@ -47,9 +47,9 @@ return {
         on_highlights = function(highlights, colors) end,
       }
 
-      vim.cmd.colorscheme 'tokyonight-night'
+      vim.cmd.colorscheme "tokyonight-night"
       -- You can configure highlights by doing something like:
-      vim.cmd.hi 'Comment gui=none'
+      vim.cmd.hi "Comment gui=none"
     end,
   },
 }
