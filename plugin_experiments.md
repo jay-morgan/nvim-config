@@ -1,8 +1,20 @@
--- CODESCENE NEOVIM
+--folke/zen-mode.nvim
+
+-- 'rcarriga/nvim-notify'
 
 -- ibhagwan/fzf-lua
 
--- sourcegraph/sg.nvim (cody) / Exafunction/codeium.vim (codium)
+Git workflow
+
+--kdheepak/lazygit.nvim (https://www.youtube.com/watch?v=CPLdltN7wgE && https://www.youtube.com/shorts/gim-riPYhVA)
+OR
+-- vim-fugitive
+OR
+-- NeogitOrg/neogit
+OR
+https://github.com/tjdevries/config_manager/blob/master/xdg_config/nvim/lua/custom/plugins/git.lua
+
+-- sourcegraph/sg.nvim (cody) / Exafunction/codeium.vim (codium) / copilot
 
 -- "rebelot/kanagawa.nvim",
 -- config = function()
@@ -19,6 +31,7 @@
 
 -- { "ThePrimeagen/git-worktree.nvim" },
 
+--"tpope/vim-dadbod",
 --{
 --"kristijanhusak/vim-dadbod-ui",
 --dependencies = {
@@ -41,6 +54,4 @@
 -- end,
 --}
 
-    -- {
-    -- 	"github/copilot.vim",
-    -- },
+-- CODESCENE NEOVIM
