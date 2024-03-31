@@ -4,4 +4,5 @@ return {
     { dir = "plugins.telescope-file-browser" },
     { dir = "plugins.neotest" },
     { dir = "nvim-dap-vscode-js" },
+    { dir = "zen-mode" },
 }
