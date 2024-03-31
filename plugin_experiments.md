@@ -1,5 +1,3 @@
---folke/zen-mode.nvim
-
 -- 'rcarriga/nvim-notify'
 
 -- ibhagwan/fzf-lua
@@ -35,7 +33,7 @@ https://github.com/tjdevries/config_manager/blob/master/xdg_config/nvim/lua/cust
 --{
 --"kristijanhusak/vim-dadbod-ui",
 --dependencies = {
---{ "tpope/vim-dadbod", lazy = true },
+--{ "tpope/vim-dadbod", lazy = true },udo apt-get upgrade
 --{
 -- "kristijanhusak/vim-dadbod-completion",
 -- ft = { "mongodb", "sql", "mysql", "plsql" },
