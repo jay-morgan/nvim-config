@@ -87,3 +87,6 @@ vim.cmd("highlight TelescopeMatching guibg=NONE ctermbg=NONE")
 -- -- Customize the background of the input field
 vim.cmd("highlight TelescopePrompt guibg=NONE ctermbg=NONE")
 vim.cmd("highlight TelescopePromptNormal guibg=NONE ctermbg=NONE")
+
+-- for twilight plugin
+vim.cmd("highlight Twilight guibg=NONE ctermbg=NONE")
