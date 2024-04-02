@@ -7,12 +7,12 @@ function CustomColors(color)
   vim.cmd.colorscheme(color)
   vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
   vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-end
 
-CustomColors()
 
--- manual transparency some themes forget
+-- for twilight plugin
+vim.cmd("highlight Twilight guibg=NONE ctermbg=NONE")
 
+-- manual transparency some themes forget below
 -- disable colorcolumn for help
 vim.cmd([[
     augroup DisableColorColumnForHelp
@@ -87,6 +87,7 @@ vim.cmd("highlight TelescopeMatching guibg=NONE ctermbg=NONE")
 -- -- Customize the background of the input field
 vim.cmd("highlight TelescopePrompt guibg=NONE ctermbg=NONE")
 vim.cmd("highlight TelescopePromptNormal guibg=NONE ctermbg=NONE")
+end
 
--- for twilight plugin
-vim.cmd("highlight Twilight guibg=NONE ctermbg=NONE")
+CustomColors()
+
