@@ -29,3 +29,6 @@ return {
 --     end,
 --     dependencies = { { "nvim-tree/nvim-web-devicons" } }
 -- }
+
+-- AI things to look into if you want to develop a copilot pause :lullul:
+-- sourcegraph/sg.nvim (cody) / Exafunction/codeium.vim (codium) / copilot

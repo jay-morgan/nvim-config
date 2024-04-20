@@ -1,25 +1,28 @@
 require "rose-pine"
 require "tokyonight"
 require "vesper"
+require "kanagawa"
+-- require "nordic"
+-- require "melange-nvim"
 
 function CustomColors(color)
-  color = "vesper"
-  vim.cmd.colorscheme(color)
+  -- color = "nord"
+  -- color = "melange"
+  -- vim.cmd.colorscheme(color)
   vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
   vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
-
   -- for twilight plugin
-  vim.cmd("highlight Twilight guibg=NONE ctermbg=NONE")
+  vim.cmd "highlight Twilight guibg=NONE ctermbg=NONE"
 
   -- manual transparency some themes forget below
   -- disable colorcolumn for help
-  vim.cmd([[
+  vim.cmd [[
     augroup DisableColorColumnForHelp
         autocmd!
         autocmd FileType help set colorcolumn=
     augroup END
-]])
+]]
 
   -- List of Gitsigns highlight groups to customize
   local gitsigns_highlight_groups = {
@@ -74,19 +77,19 @@ function CustomColors(color)
   end
 
   -- -- Set the background and border of the file browser to be transparent
-  vim.cmd("highlight TelescopeNormal guibg=NONE ctermbg=NONE")
-  vim.cmd("highlight TelescopePromptBorder guibg=NONE ctermbg=NONE")
-  vim.cmd("highlight TelescopeResultsBorder guibg=NONE ctermbg=NONE")
+  vim.cmd "highlight TelescopeNormal guibg=NONE ctermbg=NONE"
+  vim.cmd "highlight TelescopePromptBorder guibg=NONE ctermbg=NONE"
+  vim.cmd "highlight TelescopeResultsBorder guibg=NONE ctermbg=NONE"
   -- -- Customize the file preview border
-  vim.cmd("highlight TelescopePreviewBorder guibg=NONE ctermbg=NONE")
+  vim.cmd "highlight TelescopePreviewBorder guibg=NONE ctermbg=NONE"
   -- -- Customize the background of the selected line
-  vim.cmd("highlight TelescopeSelection guibg=NONE ctermbg=NONE")
-  vim.cmd("highlight TelescopeSelectionCaret guibg=NONE ctermbg=NONE")
+  vim.cmd "highlight TelescopeSelection guibg=NONE ctermbg=NONE"
+  vim.cmd "highlight TelescopeSelectionCaret guibg=NONE ctermbg=NONE"
   -- -- Customize the background when inputting text
-  vim.cmd("highlight TelescopeMatching guibg=NONE ctermbg=NONE")
+  vim.cmd "highlight TelescopeMatching guibg=NONE ctermbg=NONE"
   -- -- Customize the background of the input field
-  vim.cmd("highlight TelescopePrompt guibg=NONE ctermbg=NONE")
-  vim.cmd("highlight TelescopePromptNormal guibg=NONE ctermbg=NONE")
+  vim.cmd "highlight TelescopePrompt guibg=NONE ctermbg=NONE"
+  vim.cmd "highlight TelescopePromptNormal guibg=NONE ctermbg=NONE"
 end
 
 CustomColors()

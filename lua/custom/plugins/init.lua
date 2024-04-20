@@ -7,4 +7,8 @@ return {
     { dir = "nvim-treesitter-context" },
     { dir = "twilight" },
     { dir = "zen-mode" },
+    { dir = "kanagawa" },
+    -- { dir = "nord-vim" },
+    -- { dir = "nordic" },
+    { dir = "melange-nvim" }
 }

@@ -1,8 +1,4 @@
--- 'rcarriga/nvim-notify'
-
--- ibhagwan/fzf-lua
-
-Git workflow
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 --kdheepak/lazygit.nvim (https://www.youtube.com/watch?v=CPLdltN7wgE && https://www.youtube.com/shorts/gim-riPYhVA)
 OR
@@ -12,22 +8,19 @@ OR
 OR
 https://github.com/tjdevries/config_manager/blob/master/xdg_config/nvim/lua/custom/plugins/git.lua
 
--- sourcegraph/sg.nvim (cody) / Exafunction/codeium.vim (codium) / copilot
-
--- "rebelot/kanagawa.nvim",
--- config = function()
--- require("kanagawa").setup({
--- terminalColors = true,
--- transparent = true,
--- theme = "dragon",
--- })
--- end,
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 -- "tjdevries/colorbuddy.vim",
 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 -- "tjdevries/gruvbuddy.nvim",
 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 -- { "ThePrimeagen/git-worktree.nvim" },
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 --"tpope/vim-dadbod",
 --{
@@ -52,4 +45,8 @@ https://github.com/tjdevries/config_manager/blob/master/xdg_config/nvim/lua/cust
 -- end,
 --}
 
--- CODESCENE NEOVIM
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+-- CODESCENE NEOVIM DEVELOP PLUGIN FOR INLINE - email
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
