@@ -1,16 +1,13 @@
-require "rose-pine"
-require "tokyonight"
-require "vesper"
-require "kanagawa"
--- require "nordic"
--- require "melange-nvim"
+-- require "rose-pine"
+-- require "tokyonight"
+-- require "vesper"
+-- require "melange"
 
 function CustomColors(color)
-  -- color = "nord"
   -- color = "melange"
   -- vim.cmd.colorscheme(color)
-  vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-  vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+  -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+  -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
   -- for twilight plugin
   vim.cmd "highlight Twilight guibg=NONE ctermbg=NONE"
