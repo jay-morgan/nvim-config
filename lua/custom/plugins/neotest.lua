@@ -39,7 +39,7 @@ return {
                     jest_test_discovery = true,
 
                 }),
-                require("neotest-zig"),
+                -- require("neotest-zig"),
                 require("neotest-phpunit")
             },
             discovery = {
