@@ -7,5 +7,6 @@ return {
     { dir = "nvim-dap-vscode-js" },
     { dir = "nvim-treesitter-context" },
     { dir = "twilight" },
-    { dir = "zen-mode" }
+    { dir = "zen-mode" },
+    { dir = "neomake" }
 }

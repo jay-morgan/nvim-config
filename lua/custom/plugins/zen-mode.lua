@@ -18,10 +18,10 @@ return {
         -- statusline will be shown only if 'laststatus' == 3
         laststatus = 0, -- turn off the statusline in zen mode
       },
-      twilight = { enabled = true },
+      twilight = { enabled = false },
       wezterm = {
         enabled = true,
-        font = "17",
+        font = "13",
       },
       gitsigns = { enabled = true },
       tmux = { enabled = true },
