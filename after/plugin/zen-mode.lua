@@ -1,2 +1,8 @@
 vim.api.nvim_set_hl(0, "ZenBg", { ctermbg = 0 })
--- require("zen-mode").toggle()
+
+vim.api.nvim_create_autocmd("VimEnter", {
+    pattern = "*",
+    callback = function()
+        require("zen-mode").toggle()
+    end
+})
