@@ -1,16 +1,3 @@
-local lazy = require('lazy').setup()
-
-lazy.load({
-    {
-        "neomake/neomake",
-        config = function()
-            vim.cmd([[autocmd! BufWritePost,BufEnter * Neomake]])
-        end,
-        events = {'VimEnter', 'BufWinEnter'},
-        commands = {'Neomake'}
-    }
-})
-
 return {
     { dir = "plugins.nvim-autopairs" },
     { dir = "plugins.rose-pine" },
@@ -20,6 +7,5 @@ return {
     { dir = "nvim-dap-vscode-js" },
     { dir = "nvim-treesitter-context" },
     { dir = "twilight" },
-    { dir = "zen-mode" },
-    { dir = "neomake" }
+    { dir = "zen-mode" }
 }
