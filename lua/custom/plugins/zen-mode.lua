@@ -18,7 +18,7 @@ return {
         -- statusline will be shown only if 'laststatus' == 3
         laststatus = 0, -- turn off the statusline in zen mode
       },
-      -- twilight = { enabled = false }, --used for twilight plugin
+      twilight = { enabled = false }, --used for twilight plugin
       wezterm = {
         enabled = true,
         font = "13",
