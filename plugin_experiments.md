@@ -1,5 +1,4 @@
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
 --kdheepak/lazygit.nvim (https://www.youtube.com/watch?v=CPLdltN7wgE && https://www.youtube.com/shorts/gim-riPYhVA)
 OR
 -- vim-fugitive
@@ -7,13 +6,9 @@ OR
 -- NeogitOrg/neogit
 OR
 https://github.com/tjdevries/config_manager/blob/master/xdg_config/nvim/lua/custom/plugins/git.lua
-
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
 -- { "ThePrimeagen/git-worktree.nvim" },
-
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
 --"tpope/vim-dadbod",
 --{
 --"kristijanhusak/vim-dadbod-ui",
@@ -36,9 +31,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 -- vim.g.db_ui_use_nerd_fonts = 1
 -- end,
 --}
-
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
 -- finish go and go/ts debug setup
-
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
