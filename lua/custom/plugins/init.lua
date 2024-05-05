@@ -5,5 +5,7 @@ return {
     { dir = "plugins.melange" },
     { dir = "nvim-dap-vscode-js" },
     { dir = "nvim-treesitter-context" },
-    { dir = "zen-mode" }
+    { dir = "zen-mode" },
+    { dir = "twilight" },
+    { dir = "vim-fugitive" }
 }
