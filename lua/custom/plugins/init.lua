@@ -8,5 +8,6 @@ return {
     { dir = "zen-mode" },
     { dir = "twilight" },
     { dir = "vim-fugitive" },
-    { dir = "git-worktree" }
+    { dir = "git-worktree" },
+    { dir = "vim-dadbod" }
 }
