@@ -1,5 +1,3 @@
--- { "ThePrimeagen/git-worktree.nvim" },
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 --"tpope/vim-dadbod",
 --{
 --"kristijanhusak/vim-dadbod-ui",

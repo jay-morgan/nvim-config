@@ -7,5 +7,6 @@ return {
     { dir = "nvim-treesitter-context" },
     { dir = "zen-mode" },
     { dir = "twilight" },
-    { dir = "vim-fugitive" }
+    { dir = "vim-fugitive" },
+    { dir = "git-worktree" }
 }
