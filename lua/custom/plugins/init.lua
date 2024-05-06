@@ -9,5 +9,5 @@ return {
     { dir = "twilight" },
     { dir = "vim-fugitive" },
     { dir = "git-worktree" },
-    { dir = "vim-dadbod" }
+    { dir = "dadbod" },
 }
