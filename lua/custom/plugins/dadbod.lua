@@ -9,11 +9,12 @@
 return {
     "kristijanhusak/vim-dadbod-ui",
     dependencies = {
-        { "tpope/vim-dadbod" },
+        { "tpope/vim-dadbod", lazy = false },
         {
             "kristijanhusak/vim-dadbod-completion",
             ft = { "mongodb" },
             -- ft = { "mongodb", "sql", "mysql", "plsql" },
+            lazy = false
         },
     },
     cmd = {

@@ -1,25 +1,3 @@
---"tpope/vim-dadbod",
---{
---"kristijanhusak/vim-dadbod-ui",
---dependencies = {
---{ "tpope/vim-dadbod", lazy = true },udo apt-get upgrade
---{
--- "kristijanhusak/vim-dadbod-completion",
--- ft = { "mongodb", "sql", "mysql", "plsql" },
--- lazy = true
---},
---},
--- cmd = {
--- "DBUI",
--- "DBUIToggle",
--- "DBUIAddConnection",
--- "DBUIFindBuffer",
--- },
--- init = function()
--- -- Your DBUI configuration
--- vim.g.db_ui_use_nerd_fonts = 1
--- end,
---}
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 -- finish go and go/ts debug setup
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
