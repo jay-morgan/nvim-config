@@ -1,9 +1,3 @@
--- TODO
--- define connections strings somewhere
--- fix mongo autocomplete within buffer
--- see if bottom buffer can be new buffer instead, or split right/left
--- master tool
-
 return {
     "kristijanhusak/vim-dadbod-ui",
     dependencies = {
