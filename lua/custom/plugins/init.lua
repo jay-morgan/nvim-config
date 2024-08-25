@@ -4,7 +4,6 @@ return {
     { dir = "plugins.neotest" },
     { dir = "plugins.melange" },
     { dir = "plugins.nvim-tree" },
-    { dir = "nvim-dap-vscode-js" },
     { dir = "nvim-treesitter-context" },
     { dir = "zen-mode" },
     { dir = "twilight" },
