@@ -10,7 +10,7 @@ return {
                         width = 100,
                     },
                     hidden = true,
-                    -- hijack_netrw = true (open when launching with a directory)
+                    -- hijack_netrw = true,
                 }
             }
         })
