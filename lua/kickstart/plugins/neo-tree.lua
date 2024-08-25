@@ -9,6 +9,14 @@ return {
     "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
     "MunifTanjim/nui.nvim",
   },
+  config = function()
+    vim.g.neo_tree_remove_legacy_commands = true
+
+    -- Disable netrw
+    vim.g.loaded_netrw = 1
+    vim.g.loaded_netrwPlugin = 1
+
+    require("neo-tree").setup({
   cmd = "Neotree",
   keys = {
     { "\\", ":Neotree reveal<CR>", desc = "NeoTree reveal" },
@@ -37,4 +45,28 @@ return {
       },
     },
   },
+    })
+
+
+vim.keymap.set("n", "<leader>n", function()
+        vim.cmd(":Neotree toggle")
+    end,
+    { desc = "Toggle [N]eotree" })
+
+    -- Function to open neo-tree for directories
+    local function open_neo_tree_on_directory()
+      local path = vim.fn.expand('%:p')
+      if vim.fn.isdirectory(path) == 1 then
+        vim.cmd("Neotree position=current dir=" .. path)
+      end
+    end
+
+    -- Autocommand to check if opened path is a directory
+    vim.api.nvim_create_autocmd({"VimEnter"}, {
+      callback = function()
+        vim.schedule(open_neo_tree_on_directory)
+      end
+    })
+
+    end,
 }
