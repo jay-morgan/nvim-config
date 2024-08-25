@@ -36,7 +36,7 @@ return {
       group_empty_dirs = true,
       follow_current_file = {
         enabled = true, -- This will find and focus the file in the active buffer every time the current file is changed while the tree is open.
-        leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
+        leave_dirs_open = true, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
       },
       window = {
         mappings = {
@@ -67,39 +67,6 @@ vim.keymap.set("n", "<leader>n", function()
         vim.schedule(open_neo_tree_on_directory)
       end
     })
-
-    -- Function to check if neo-tree is the only window left
-local function is_neo_tree_only()
-    local tabpage = vim.api.nvim_get_current_tabpage()
-    local win_list = vim.api.nvim_tabpage_list_wins(tabpage)
-    
-    if #win_list ~= 1 then
-        return false
-    end
-    
-    local buf = vim.api.nvim_win_get_buf(win_list[1])
-    local buf_name = vim.api.nvim_buf_get_name(buf)
-    return string.match(buf_name, "neo%-tree filesystem") ~= nil
-end
-
--- Function to close neo-tree if it's the only window
-local function close_neo_tree_if_last()
-    if is_neo_tree_only() then
-        vim.cmd("quit")
-    end
-end
-
--- Autocommand group for our neo-tree related commands
-local augroup = vim.api.nvim_create_augroup("NeoTreeAutoClose", { clear = true })
-
--- Autocommand to run the check when closing a buffer
-vim.api.nvim_create_autocmd({"BufEnter", "WinEnter", "WinClosed"}, {
-    group = augroup,
-    pattern = "*",
-    callback = function()
-        vim.defer_fn(close_neo_tree_if_last, 50)
-    end,
-})
 
     end,
 }
