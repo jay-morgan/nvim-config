@@ -1,6 +1,6 @@
 vim.api.nvim_set_keymap(
   "n",
-  "<leader>jw",
+  "<leader>tw",
   "<cmd>lua require(\"neotest\").run.run({ jestCommand = \"jest --watch \" })<cr>",
-  { desc = "Start [J]est Test [W]atch mode" }
+  { desc = "Start Jest [t]est [w]atch mode" }
 )

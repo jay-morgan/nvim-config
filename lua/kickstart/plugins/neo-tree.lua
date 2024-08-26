@@ -48,10 +48,10 @@ return {
     })
 
 
-vim.keymap.set("n", "<leader>n", function()
+vim.keymap.set("n", "<leader>on", function()
         vim.cmd(":Neotree toggle")
     end,
-    { desc = "Toggle [N]eotree" })
+    { desc = "T[o]ggle [N]eotree" })
 
     -- Function to open neo-tree for directories
     local function open_neo_tree_on_directory()

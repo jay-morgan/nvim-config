@@ -2,8 +2,9 @@ local harpoon = require("harpoon")
 
 harpoon:setup()
 
-vim.keymap.set("n", "<C-h>", function() harpoon:list():append() end, {desc = "Harpoon to list"})
-vim.keymap.set("n", "<leader>ha", function() harpoon:list():append() end, {desc = "[H]arpoon [A]ppend to list"})
+vim.keymap.set("n", "<leader>pa", function() harpoon:list():add() end, {desc = "Har[p]oon [a]dd to list"})
+vim.keymap.set("n", "<leader>pl", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, {desc = "Har[p]oon [l]ist"})
+vim.keymap.set("n", "<C-h>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, {desc = "Har[p]oon [l]ist (ctrl+h)"})
 
 
 vim.keymap.set("n", "<C-1>", function() harpoon:list():select(1) end)
@@ -38,10 +39,10 @@ end
 -- vim.keymap.set("n", "<leader>rl>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, { desc = "Open [H]arpoon [L]ist" })
 
 
-vim.keymap.set("n", "<C-l>", function() toggle_telescope(harpoon:list()) end,
-    { desc = "Open Harpoon list" })
-vim.keymap.set("n", "<leader>hl", function() toggle_telescope(harpoon:list()) end,
-    { desc = "[H]arpoon open [L]ist" })
+-- vim.keymap.set("n", "<C-l>", function() toggle_telescope(harpoon:list()) end,
+--     { desc = "Open Harpoon list" })
+-- vim.keymap.set("n", "<leader>hl", function() toggle_telescope(harpoon:list()) end,
+--     { desc = "[H]arpoon open [L]ist" })
 
 -- NOTE Deafults
 -- settings = {

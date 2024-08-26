@@ -59,18 +59,17 @@ return {
 
       -- Document existing key chains
       require("which-key").add {
-        ["<leader>f"] = { name = "[F]iles", _ = "which_key_ignore" },
-        ["<leader>g"] = { name = "[G]it", _ = "which_key_ignore" },
-        ["<leader>h"] = { name = "[H]arpoon", _ = "which_key_ignore" },
-        ["<leader>p"] = { name = "[P]roject", _ = "which_key_ignore" },
-        ["<leader>t"] = { name = "[T]est", _ = "which_key_ignore" },
-        ["<leader>w"] = { name = "[W]orkspace", _ = "which_key_ignore" },
+        {"<leader>p", group = "Har[p]oon" },
+        {"<leader>f", group = "[F]ile" },
+        {"<leader>t", group = "[T]est" },
         { "<leader>c", group = "[C]ode", mode = { "n", "x" } },
         { "<leader>d", group = "[D]ocument" },
+        {"<leader>g", group = "[G]it" },
         { "<leader>r", group = "[R]ename" },
         { "<leader>s", group = "[S]earch" },
         { "<leader>w", group = "[W]orkspace" },
         { "<leader>o", group = "T[o]ggle" },
+        { "<leader>u", group = "DB[U]I" },
         { "<leader>h", group = "Git [H]unk", mode = { "n", "v" } },
       }
     end,
