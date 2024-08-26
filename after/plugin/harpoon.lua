@@ -3,8 +3,8 @@ local harpoon = require("harpoon")
 harpoon:setup()
 
 vim.keymap.set("n", "<leader>pa", function() harpoon:list():add() end, {desc = "Har[p]oon [a]dd to list"})
-vim.keymap.set("n", "<leader>pl", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, {desc = "Har[p]oon [l]ist"})
-vim.keymap.set("n", "<C-h>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, {desc = "Har[p]oon [l]ist (ctrl+h)"})
+vim.keymap.set("n", "<leader>pl", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, {desc = "Har[p]oon [l]ist (ctrl+p)"})
+vim.keymap.set("n", "<C-p>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, {desc = "Har[p]oon [l]ist"})
 
 
 vim.keymap.set("n", "<C-1>", function() harpoon:list():select(1) end)
