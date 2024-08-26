@@ -59,12 +59,12 @@ return {
 
       -- Document existing key chains
       require("which-key").add {
-        {"<leader>p", group = "Har[p]oon" },
-        {"<leader>f", group = "[F]ile" },
-        {"<leader>t", group = "[T]est" },
+        { "<leader>p", group = "Har[p]oon" },
+        { "<leader>f", group = "[F]ile" },
+        { "<leader>t", group = "[T]est" },
         { "<leader>c", group = "[C]ode", mode = { "n", "x" } },
-        { "<leader>d", group = "[D]ocument" },
-        {"<leader>g", group = "[G]it" },
+        { "<leader>d", group = "[D]iff" },
+        { "<leader>g", group = "[G]it" },
         { "<leader>r", group = "[R]ename" },
         { "<leader>s", group = "[S]earch" },
         { "<leader>w", group = "[W]orkspace" },

@@ -10,4 +10,6 @@ return {
   { dir = "git-worktree" },
   { dir = "dadbod" },
   { dir = "oil" },
+  { dir = "git-messenger" },
+  { dir = "diffview" },
 }

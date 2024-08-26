@@ -56,15 +56,15 @@ return {
         -- You can put your default mappings / updates / etc. in here
         --  All the info you're looking for is in `:help telescope.setup()`
         --
-      defaults = {
-        file_ignore_patterns = {
-          "node_modules",
-          -- "%.git",
-          "coverage",  -- This will exclude .ts.html files
-          -- Add any other patterns you want to ignore
+        defaults = {
+          file_ignore_patterns = {
+            "node_modules",
+            -- "%.git",
+            "coverage", -- This will exclude .ts.html files
+            -- Add any other patterns you want to ignore
+          },
+          -- Other default configurations...
         },
-        -- Other default configurations...
-      },
         -- pickers = {}
         extensions = {
           ["ui-select"] = {
@@ -82,7 +82,7 @@ return {
       vim.keymap.set("n", "<leader>sh", builtin.help_tags, { desc = "Search [H]elp" })
       vim.keymap.set("n", "<leader>sk", builtin.keymaps, { desc = "Search [K]eymaps" })
       vim.keymap.set("n", "<leader>sf", builtin.find_files, { desc = "Search [F]iles" })
-      vim.keymap.set("n", "<leader>ss", builtin.builtin, { desc = "Search [S]elect Telescope" })
+      vim.keymap.set("n", "<leader>st", builtin.builtin, { desc = "Search Select [T]elescope Search Type" })
       vim.keymap.set("n", "<leader>sw", builtin.grep_string, { desc = "Search current [W]ord" })
       vim.keymap.set("n", "<leader>sg", builtin.live_grep, { desc = "Search by [G]rep" })
       vim.keymap.set("n", "<leader>sd", builtin.diagnostics, { desc = "Search [D]iagnostics" })
