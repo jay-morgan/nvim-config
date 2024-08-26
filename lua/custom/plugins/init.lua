@@ -9,4 +9,5 @@ return {
   { dir = "vim-fugitive" },
   { dir = "git-worktree" },
   { dir = "dadbod" },
+  { dir = "oil" },
 }
