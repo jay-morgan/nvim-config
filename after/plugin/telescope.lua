@@ -19,8 +19,6 @@ vim.keymap.set("n", "<leader>gc", require("telescope.builtin").git_branches, { d
 -- <Enter> - switches to that worktree
 -- <c-d> - deletes that worktree
 -- <c-f> - toggles forcing of the next deletion
-
 require("telescope").load_extension("git_worktree")
-
 vim.keymap.set("n", "<leader>gw", function() require('telescope').extensions.git_worktree.git_worktrees() end, { desc = "Git [W]orktrees" })
 vim.keymap.set("n", "<leader>gn", function() require('telescope').extensions.git_worktree.create_git_worktree() end, { desc = "Git [N]ew Worktree" })

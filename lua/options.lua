@@ -74,17 +74,4 @@ vim.opt.shiftwidth = 4
 vim.opt.smarttab = true
 vim.opt.autoindent = true
 
--- GIT WORKTREE @TODO: test
--- set up git worktree in telescope
---require("telescope").load_extension("git_worktree")
--- Keybinding to -create a worktree
--- vim.api.nvim_set_keymap("n", "<leader>wc", [[:lua require("git-worktree").create_worktree()<CR>]],
---  { noremap = true, silent = true })
--- Keybinding to switch to an existing worktree
--- vim.api.nvim_set_keymap("n", "<leader>ws", [[:lua require("git-worktree").switch_worktree()<CR>]],
---  { noremap = true, silent = true })
--- Keybinding to delete an existing worktree
---vim.api.nvim_set_keymap("n", "<leader>wd", [[:lua require("git-worktree").delete_worktree()<CR>]],
--- { noremap = true, silent = true })
-
 -- vim: ts=2 sts=2 sw=2 et
